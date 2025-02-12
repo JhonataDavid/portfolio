@@ -17,14 +17,15 @@ a {
 
 .tituloDestaque{
     color: #ed2228;
+    font-family: "Agu Display", serif;
 }
 .titulo_principal{
-    font-family: "Agu Display", serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1cm;
 }
 
 .apresentacao{
-    font-family: "Agu Display", serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 10% 20%;
     display: flex;
     align-items: center;
@@ -40,22 +41,25 @@ a {
 .apresentacao_links{
     display: flex;
     justify-content: space-between;
-}
-.linkedin {
-  
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    border-radius: 10%;
-    color: white;
-    background-color: #0A66C2 ;
-    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-.github { 
-    font-family: Arial, serif;
-    font-size: 18px;
-    border-radius: 15%;
-    color: black;
-    background-color: white ;
+.apresentacao_links_link{
+    background-color: #ed2228;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 23px;
+    padding: 21px 0;
     text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    
 }
+.apresentacao_links_conteudo {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
