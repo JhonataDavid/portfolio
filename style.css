@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Agu+Display:MORF@0..60&display=swap');
 * {
-    padding: 1%;
+    padding: 0%;
     margin: 0%;
 }
 
@@ -17,16 +17,16 @@ a {
 
 .tituloDestaque{
     color: #ed2228;
-    font-family: "Agu Display", serif;
+    font-family: "Agu Display", serif  ;
 }
 .titulo_principal{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1cm;
+    font-size: 41px;
 }
 
 .apresentacao{
     font-family: 'Courier New', Courier, monospace;
-    margin: 10% 20%;
+    padding: 14% 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,7 +36,10 @@ a {
     width: 615px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
+}
+.paragrafro_sobre_mim{
+    font-size: 20px;
 }
 .apresentacao_links{
     display: flex;
@@ -47,19 +50,36 @@ a {
 }
 
 .apresentacao_links_link{
-    background-color: #ed2228;
-    width: 280px;
+    /* background-color: #ed2228; crtl k c */ 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid #ed2228;;
+    width: 250px;
     text-align: center;
+    align-items: center;
     border-radius: 16px;
-    font-size: 23px;
-    padding: 21px 0;
+    font-size: 20px;
+    padding: 16px 0;
     text-decoration: none;
-    color: white;
+    color: #F6F6F6;
     font-family: 'Courier New', Courier, monospace;
     
+    
 }
-.apresentacao_links_conteudo {
+.apresentacao_links_link:hover{ /*  animacao do mouse */
+    background-color: #ed222959;
+    color: blue;
+}
+.apresentacao_links_subtitulo {
     font-family: 'Courier New', Courier, monospace;
+    font-weight: 400px;
+}
+.rodape{
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ed2228;
+    text-align: center;
 }
 
 
