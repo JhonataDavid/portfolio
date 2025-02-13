@@ -25,9 +25,13 @@
 
 .cabecalho_menu_links {
     font-family: var(--fonte-principal);
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--cor-terciaria);
     text-decoration: none;
+}
+
+.cabecalho_menu_links:hover{
+    color: #e7cfd031;
 }
 
 body {
@@ -38,12 +42,12 @@ body {
 
 .tituloDestaque {
     color: var(--cor-terciaria);
-    font-family: "Agu Display", serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .titulo_principal {
     font-family: var(--fonte-principal);
-    font-size: 41px;
+    font-size: 2.53rem;
 }
 
 .apresentacao {
@@ -55,14 +59,14 @@ body {
 }
 
 .apresentacao_conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .paragrafro_sobre_mim {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .apresentacao_links { 
@@ -73,31 +77,34 @@ body {
     gap: 20px;
 }
 
-.apresentacao_links_link {
-    /* background-color: #ed2228; crtl k c */ 
+.apresentacao_links_redes {
     display: flex;
     justify-content: center;
     gap: 20px;
     border: 2px solid var(--cor-terciaria);
-    width: 250px;
+    width: 50%;
     text-align: center;
     align-items: center;
     border-radius: 16px;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 16px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--fonte-principal); 
 }
 
-.apresentacao_links_link:hover { /*  animacao do mouse */
+.apresentacao_links_redes:hover { /*  animacao do mouse */
     background-color: var(--cor-hover);
-    color: blue;
+    color: rgba(0, 0, 255, 0.596);
 }
 
 .apresentacao_links_subtitulo {
     font-family: var(--fonte-principal);
     font-weight: 400px;
+}
+
+.imagem_apresentacao{
+    width: 40%;
 }
 
 .rodape {
