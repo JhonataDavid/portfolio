@@ -56,6 +56,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao_conteudo {
@@ -112,4 +113,22 @@ body {
     font-family: var(--fonte-principal);
     background-color: var(--cor-terciaria);
     text-align: center;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho_menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao_conteudo{   
+        width: auto;
+    }
 }
