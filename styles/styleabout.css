@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display:MORF@0..60&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+:root {
+    --cor-primaria : #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #ed2228;
+    --cor-hover: #ed222931;
+    --fonte-principal:  'Courier New', Courier, monospace;
+    --fonte-secundaria: "Agu Display", serif;
+}
+
+.cabecalho {
+    padding: 2% 0 0 20%;
+}
+
+.cabecalho_menu {
+    display: flex ;
+    gap: 80px; 
+}
+
+.cabecalho_menu_links {
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabecalho_menu_links:hover{
+    color: #e7cfd031;
+}
+
+body {
+    box-sizing: border-box;
+    background-color:var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.tituloDestaque {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.titulo_principal {
+    font-family: var(--fonte-principal);
+    font-size: 2.53rem;
+}
+
+.apresentacao {
+    font-family: var(--fonte-principal);
+    padding: 6% 20% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao_conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.paragrafro_sobre_mim {
+    font-size: 1.25rem;
+}
+
+.apresentacao_links { 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.apresentacao_links_redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    border-radius: 16px;
+    font-size: 1.25rem;
+    padding: 16px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal); 
+}
+
+.apresentacao_links_redes:hover { /*  animacao do mouse */
+    background-color: var(--cor-hover);
+    color: rgba(0, 0, 255, 0.596);
+}
+
+.apresentacao_links_subtitulo {
+    font-family: var(--fonte-principal);
+    font-weight: 400px;
+}
+
+.imagem_apresentacao{
+    width: 40%;
+}
+
+.rodape {
+    padding: 20px;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho_menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao_conteudo{   
+        width: auto;
+    }
+}
